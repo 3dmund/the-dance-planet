@@ -1,0 +1,362 @@
+/*Color palettes: soft pink, soft pastel, soft purples*/
+* {
+	/*border: 1px dashed black;*/
+}
+/*EVERY PAGE*/
+body {
+	background-color: #cccccc;
+	/*transform: scale(1.1);*/
+    /*transform-origin: 10% 10%;*/
+}
+#canvasBody {
+	width: 80%;
+    position: absolute;
+    background-color: white;
+    background-repeat: repeat;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    box-shadow: 0px 0px 3px black;
+}
+#innerCanvasBody {
+	width: 92%;
+	margin-left: 4%;
+	margin-right: 4%;
+	overflow-y: auto; 
+	position: relative;
+	min-height: 400px;
+}
+.header {
+	font-family: cursive;
+	margin: 1em;
+}
+#title {
+	font-size: 70px;
+	padding: 0px;
+	margin: 0px;
+}
+#subTitle {
+	font-size: 20px;
+	font-family: cursive;
+	margin: 0px;
+	padding: 0px;
+}
+#navigationBar {
+	width: 100%;
+	height: 33px;
+	background-color: #fbd2d2;
+	margin-top: 2%;
+}
+.navigationBlock > a {
+	text-decoration: none;
+}
+.navigationBlockLink {
+	color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+.navigationBlockLink:visited {
+	text-decoration: none;
+	color: white;
+}
+.navigationBLock {
+	font-size: 20px;
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+    position: relative;
+}
+.navigationBlock:hover .dropDownMenu {
+	display: block;
+}
+.navigationBlock:hover .navigationBlockLink {
+	color: #cccccc;
+}
+.dropDownMenu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	margin: 0;
+	display: none;
+	background-color: #cccccc;
+	width: 200px;
+	list-style: none;
+	vertical-align: center;
+	border: 1px solid black;
+	color: black;
+	z-index: 100;
+}
+.dropDownMenu > a:visited {
+	color: black;
+	text-decoration: none;
+}
+.dropDownElement {
+	/*margin-left: -40px;*/
+	text-decoration: none;
+	padding: 5px;
+	border: .5px solid black;
+}
+.dropDownLink {
+	color: black;
+	text-decoration: none;
+}
+.dropDownElement:hover {
+	background-color: #ead3f8;
+	color: white;
+}
+#bottom {
+	clear: both;
+	text-align: center;
+	background-color: #ead3f8;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+#bottom img {
+	width: 40px;
+	height: 40px;
+}
+.socialMediaButton {
+	text-decoration: none;
+}
+
+/*HOME PAGE*/
+.mainLeft {
+	float: left;
+	display: inline-block;
+	margin-bottom: 5px;
+	margin-left: 7px;
+	width: 45%;
+	clear: left;
+}
+.mainRight {
+	float: right;
+	display: inline-block;
+	margin-bottom: 5px;
+	margin-right: 7px;
+	width: 45%;
+	clear: right;
+}
+.didYouKnow {
+	margin-top: 10px;
+	width: 400px;
+	height: 200px;
+	float: left;
+	clear: left;
+	display: inline-block;
+	/*border: 1px dashed black;*/
+	font-size: 18px;
+	max-width: 100%;
+}
+.didYouKnowHead {
+	margin-top: 0px;
+	width: 100%;
+	height: 12%;
+	background-color: #ffe2fe;
+	border-radius: 5px;
+	font-size: 26px;
+	/*padding: 5px;*/
+	padding: 3px 3px 8px 3px;
+	border: 1px solid black;
+}
+#slideShow {
+	width: 70%;
+	height: 425px;
+	max-height: 20%;
+	border: 1px solid black;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	position: relative;
+	background-color: #cccccc;
+}
+.mySlides {
+	height: 100%;
+	width: auto;
+	overflow: hidden;
+	margin: auto;
+	position: relative;
+	z-index: 1;
+}
+#leftSideButton {
+	top: 45%;
+	position: absolute;
+	z-index: 2;
+	display: none;
+}
+#rightSideButton {
+	top: 45%;
+	right: 0;
+	position: absolute;
+	z-index: 2;
+	display: none;
+}
+.arrow {
+	width: 50px;
+	height: 50px;
+}
+#dotsBar {
+	top: 92%;
+	width: 40%;
+	position: absolute;
+	z-index: 2;
+	margin: 0 auto;
+	text-align: center;
+	margin-left: 30%;
+	margin-right: 30%;
+	display: none;
+}
+.dot {
+	border-radius: 100%;
+	height: 10px;
+	width: 10px;
+	border: 1px solid black;
+	margin: 3px;
+	display: inline-block;
+}
+#slideShow:hover #leftSideButton {
+	display: block;
+}
+#slideShow:hover #rightSideButton {
+	display: block;
+}
+#slideShow:hover #dotsBar {
+	display: block;
+}
+#heartDance {
+	float: left;
+	clear: left;
+	margin-left: 20%;
+	margin-top: -5%;
+	margin-bottom: 5%;
+	max-width: 80%;
+}
+
+/*ABOUT US*/
+#aboutUsText {
+	width: 600px;
+	float: left;
+	/*border: 1px dashed black;*/
+	display: inline-block;
+	margin-bottom: 5px;
+}
+#aboutUsTextHeader {
+	color: ;
+	margin-left: 25px;
+	margin-bottom: 0px;
+}
+#aboutUsTextBody {
+	/*background-color: #cccccc;*/
+	width: 300px;
+	font-size: 20px;
+	float: right;
+	display: inline-block;
+	clear: right;
+}
+#motherDaughterPhoto {
+	float: left;
+	margin-left: 30px;
+	margin-top: 20px;
+	display: inline-block;
+}
+
+/*COMPETITIONS*/
+.hiddenLinkButton {
+	font-family: cursive;
+	font-size: 30px;
+	border: 1px solid black;
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	border-radius: 5px;
+	margin: 10px;
+	background-color: #cce3fa;
+}
+.hiddenLink > a {
+	text-decoration: none;
+	color: black;
+}
+.hiddenLink > a:visited {
+	color: black;
+}
+
+
+#competitionName {
+	font-size: 20px;
+	font-weight: bold;
+}
+#competitions {
+	display: inline-block;
+	width: 80%;
+}
+#competitions > ul{
+	/*width: 700px;*/
+	float: left;
+	clear: both;
+}
+#competitionsWithPic > img {
+	width: 240.3px;
+	height: 255.9px;
+	margin-top: 15px;
+	float: right;
+}
+#competitionsWithPicLeft {
+	width: 650px;
+	float: left;
+}
+
+/*Media*/
+.booksList {
+	width: 60%;
+	float: left;
+	/*display: inline-block;*/
+	max-width: 60%;
+}
+#bookshelfPic {
+	width: 270px;
+	height: 190px;
+	float: right;
+	margin: 20px 20px;
+	/*display: inline-block;*/
+	max-width: 25%;
+}
+#balletMovies {
+	margin-top: 10px;
+	font-size: 50px;
+}
+.movieCover {
+	width: 200px;
+	height: 300px;
+}
+#danceMagazines{
+	font-size: 20px;
+	margin: 10px;
+	/*border: 1px solid black;*/
+}
+.magazineCover {
+	width: 115px;
+	height: 156.25px;
+}
+
+/*CONTACT*/
+#contactParagraph {
+	font-size: 25px;
+}
+#email {
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
